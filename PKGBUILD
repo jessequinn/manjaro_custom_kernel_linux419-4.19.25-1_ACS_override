@@ -10,10 +10,10 @@ pkgname=('linux419' 'linux419-headers')
 _kernelname=-MANJARO
 _basekernel=4.19
 _basever=419
-_aufs=20190211
-_bfq=v9
-_bfqdate=20190204
-_sub=37
+_aufs=20190311
+_bfq=v10
+_bfqdate=20190411
+_sub=39
 pkgver=${_basekernel}.${_sub}
 pkgrel=1
 arch=('i686' 'x86_64')
@@ -37,7 +37,7 @@ source=("https://www.kernel.org/pub/linux/kernel/v4.x/linux-${_basekernel}.tar.x
         'tmpfs-idr.patch'
         'vfs-ino.patch'
         #"0001-BFQ-${_bfq}-${_bfqdate}.patch::https://github.com/Algodev-github/bfq-mq/compare/0adb328...698937e.patch"
-        "0001-BFQ-${_bfq}-${_bfqdate}.patch::https://raw.githubusercontent.com/sirlucjan/kernel-patches/master/4.19/bfq-sq-mq/4.19-bfq-sq-mq-v9r1-2K190204-rc1.patch"
+        "0001-BFQ-${_bfq}-${_bfqdate}.patch::https://raw.githubusercontent.com/sirlucjan/kernel-patches/master/4.19/bfq-sq-mq/4.19-bfq-sq-mq-v10r1-2K190411-rc1.patch"
         # ARCH Patches
         '0001-add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by.patch'
         # MANJARO Patches
@@ -60,22 +60,22 @@ source=("https://www.kernel.org/pub/linux/kernel/v4.x/linux-${_basekernel}.tar.x
         '0013-bootsplash.patch'
 	acso.patch::https://gitlab.com/Queuecumber/linux-acs-override/raw/master/workspaces/4.19.5/acso.patch)
 sha256sums=('0c68f5655528aed4f99dae71a5b259edc93239fa899e2df79c055275c21749a1'
-            '517d79fc64b4c95ee5845ce21e4c60efb8f9479ce7c4ca2ac3496cf670e906ff'
-            '49c81c87c13b388019232a562e9a769e8621bd47a0f355e87d0021bc3ffc0490'
-            '266670dba3b7deee93c50733c4657fe33bc273d4c4c091409644611194fee472'
+            '9cda72a336a1c26e32d9b1a19bbfe39c4a5441a91b84352c5bd69655896cf114'
+            '8c463fd0b920a1aac691ae74c5b34aa1af0bdf2f769615aae1c96285a5dc6c9b'
+            'c0e4a9118aa94039d6d57256fa3f91796f216a8b9abd3b7e09c3b52066d3884e'
             'b44d81446d8b53d5637287c30ae3eb64cae0078c3fbc45fcf1081dd6699818b5'
             '43942683a7ff01b180dff7f3de2db4885d43ab3d4e7bd0e1918c3aaf2ee061f4'
             'ae2e95db94ef7176207c690224169594d49445e04249d2499e9d2fbc117a0b21'
             '90831589b7ab43d6fab11bfa3ad788db14ba77ea4dc03d10ee29ad07194691e1'
-            '7e5db8cfc37ea6f27107909d07cb923bf23465aadf15e9f67a826638e988611a'
-            'bb7dab3f010db7e0f3e67edd8526b2735f19086413a36ab77ba5c4af02013c9d'
+            '2dc5770bf895985c424a37f7ffa812e1beacddfe1184193977b32e5e09688a0d'
+            'a37bdc6cbbf2f69977c2725fa651e6ee137205acea81d5c00d5ce9bf4bec004b'
             '59708da839c4ce99ed05c3f7747e6c6551cd5e84d0c2a75b856f419856f0ff3b'
-            '0c4c6d54f4486ade957ee517ea0122941bc25a4ab445fccdb57146244257e5b7'
-            '0e0224a4ac56f96b2931338d4595060ae74c164daffca500e428f56ededc045f'
+            '8f4fe7c7dd33aeb3eb38f6a02e824361ec27bbe0743f30945bea4a57b5fda09f'
+            'b7d6e24fda7c9c2a8a5d6f2f670f56a3f0a7bb1afe97ca174eed6d277caeffd3'
             '67be2ec0056efee6c8e6cd88f60a2027b50154b0df8b97c0b308064547ac91a3'
             'cea84684259922a3b3c484ec609159513ff2f12b2aa34d2697c6fc1c03bda5ec'
             '9c25c5942c4656845744b83facbab97fda3f18747c8f71c129b928a6bda8d89a'
-            '0998de1fd20f531f4f147e42af78137ee44c549dcfc9b6027ca91b5c791af11e'
+            'fbbd1354d8a9f5eaf158702bc73f0f4d2a67173310c9e904aa91f1fd60a23b13'
             '37b86ca3de148a34258e3176dbf41488d9dbd19e93adbd22a062b3c41332ce85'
             'd5204941a683ce09f97fd068863e0fe437a15c6e1b87e08bd9a992d65e8b0d38'
             'a504f6cf84094e08eaa3cc5b28440261797bf4f06f04993ee46a20628ff2b53c'
